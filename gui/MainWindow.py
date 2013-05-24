@@ -1,5 +1,5 @@
 from gui.forms.Ui_MainWindow import Ui_MainWindow
-from PySide import QtCore, QtGui
+from PyQt4 import QtCore, QtGui
 import Logon;
 
 class MainWindow(QtGui.QMainWindow):
@@ -9,7 +9,7 @@ class MainWindow(QtGui.QMainWindow):
 	    username = self.ui.username.text()
 	    password = self.ui.password.text()
 	    
-	    Logon.connectToPWSDrives(username,password)
+	    Logon.connectToPWSDrives(username, password)
 
     def __init__(self):
         QtGui.QMainWindow.__init__(self)

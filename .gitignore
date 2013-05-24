@@ -1,2 +1,6 @@
 *.sublime-*
 *.pyc
+.project
+.pydevproject
+.settings
+
